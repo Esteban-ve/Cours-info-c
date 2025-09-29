@@ -1,0 +1,5 @@
+# Ignore all executables
+*.exe
+
+# Ignore the text file ( à cause de l'existance de readme)
+mail avant le 29 09.txt
