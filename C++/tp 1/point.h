@@ -12,10 +12,9 @@ private:
 
 public:
     void initialize(int,int,int);
-    void setters (int, int, int);
+    void setters(int, int, int);
     int getters();
 };
 
 
 #endif
-
