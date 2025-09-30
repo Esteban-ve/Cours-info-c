@@ -2,7 +2,7 @@
 #define point
 
 
-class Point
+class point
 {
 
 private:
@@ -13,7 +13,7 @@ private:
 public:
     void initialize(int,int,int);
     void setters (int, int, int);
-
+    int getters();
 };
 
 

@@ -1,22 +1,22 @@
-#include “Point.h”
+#include "point.h"
 
-void Point :: initialize (int a, int b, int c) 
+void point :: initialize (int a, int b, int c) 
 {
    x = a ;
    y = b ;
    z = c ;
 }
 
-void Point :: setters(int  a, int b ,int c) 
+void point :: setters(int  a, int b ,int c) 
 {	
    x = a ;
    y = b ;
    z = c ;
 }
 
-void Point :: getters()
+int point :: getters()
 {
-    return x,y,z;
+    return (x,y,z);
 }
 
 
