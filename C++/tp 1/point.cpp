@@ -1,15 +1,22 @@
-#ifndef point
-#define point
+#include “Point.h”
 
-
-class Point
+void Point :: initialize (int a, int b, int c) 
 {
- public:
- int x,y,z;
- double distance(const Point &P);
- Point milieu(const Point &P);
-};
+   x = a ;
+   y = b ;
+   z = c ;
+}
 
+void Point :: setters(int  a, int b ,int c) 
+{	
+   x = a ;
+   y = b ;
+   z = c ;
+}
 
-#endif
+void Point :: getters()
+{
+    return x,y,z;
+}
+
 
