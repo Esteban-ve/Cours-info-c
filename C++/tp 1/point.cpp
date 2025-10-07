@@ -33,16 +33,16 @@ void point :: translate(int a, int b, int c)
 };
 
 
-int point::milieuX(int a)const {
-    return x + a;
+double point::milieuX(int a)const {
+    return (x + a)/2;
 };
 
-int point::milieuY(int b)const {
-    return y + b;
+double point::milieuY(int b)const {
+    return (y + b)/2;
 };
 
-int point::milieuZ(int c)const {
-    return z + c;
+double point::milieuZ(int c)const {
+    return (z + c)/2;
 };
 
 

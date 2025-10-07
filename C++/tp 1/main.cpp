@@ -16,5 +16,13 @@ int main ()
             << p.getY() << ", " 
             << p.getZ() << ")" << std::endl;
 
+   point p2 = point(0,0,0) ; // creation d’un point
+   p2.initialize(0,0,0);
+
+   std::cout << "milieu entre les deux points:("
+   << p.milieuX(p2.getX()) << ", "
+   << p.milieuY(p2.getY()) << ", "
+   << p.milieuZ(p2.getZ()) << ")" << std::endl;
+
 }
 
