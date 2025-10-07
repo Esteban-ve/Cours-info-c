@@ -5,9 +5,9 @@
 int main ()
 {
    point p = point(10,2,5) ; // creation d’un point
-   p.initialize(10,2,5);
+/*
 
-/*   point *pt = new point();  // allocation dynamique d’un Point
+   point *pt = new point();  // allocation dynamique d’un Point
    pt->setters(4,5,5); 
 */
 
@@ -17,12 +17,11 @@ int main ()
             << p.getZ() << ")" << std::endl;
 
    point p2 = point(0,0,0) ; // creation d’un point
-   p2.initialize(0,0,0);
 
    std::cout << "milieu entre les deux points:("
    << p.milieuX(p2.getX()) << ", "
    << p.milieuY(p2.getY()) << ", "
-   << p.milieuZ(p2.getZ()) << ")" << std::endl;
+   << p.milieuZ(p2.getZ()) << ", il est probablement tronqué )" << std::endl;
 
 }
 
