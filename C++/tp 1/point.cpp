@@ -1,5 +1,7 @@
 #include "point.h"
 
+
+    // Constructeur
 point :: point (int a, int b, int c)
 {
    this-> x = a ;
@@ -7,6 +9,8 @@ point :: point (int a, int b, int c)
    this->z = c ;
 };
 
+
+    // Méthodes
 void point :: initialize (int a, int b, int c) 
 {
    this->x = a ;
@@ -28,18 +32,21 @@ void point :: translate(int a, int b, int c)
    this->z = z+c ;
 };
 
-int point::milieuX(point p)const {
-    return x + p.getX();
+
+int point::milieuX(int a)const {
+    return x + a;
 };
 
-int point::milieuY(point p)const {
-    return y + p.getY();
+int point::milieuY(int b)const {
+    return y + b;
 };
 
-int point::milieuZ(point p)const {
-    return z + p.getZ();
+int point::milieuZ(int c)const {
+    return z + c;
 };
 
+
+    // Getters
 
 int point::getX() const {
     return x;

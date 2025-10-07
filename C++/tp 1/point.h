@@ -12,6 +12,10 @@ public:
     // Méthodes
     void initialize(int a, int b, int c);
     void setters(int a, int b, int c);
+    void translate(int a, int b, int c);
+    int milieuX(int x);
+    int milieuY(int y);
+    int milieuZ(int z);
 
     // Getters
     int getX() const;
