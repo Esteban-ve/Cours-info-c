@@ -1,20 +1,22 @@
-#ifndef point
-#define point
+#ifndef POINT_H
+#define POINT_H
 
-
-class point
-{
-
+class point {
 private:
-    int x;
-    int y;
-    int z;
+    int x, y, z;
 
 public:
-    void initialize(int,int,int);
-    void setters(int, int, int);
-    int getters();
+    // Constructeur
+    point(int a = 0, int b = 0, int c = 0);
+
+    // Méthodes
+    void initialize(int a, int b, int c);
+    void setters(int a, int b, int c);
+
+    // Getters
+    int getX() const;
+    int getY() const;
+    int getZ() const;
 };
 
-
-#endif
+#endif // POINT_H

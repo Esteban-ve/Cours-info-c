@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Point.h"
-
+#include "Point.cpp"
 
 int main ()
 {
@@ -9,8 +9,12 @@ int main ()
 
 /*   point *pt = new point();  // allocation dynamique d’un Point
    pt->setters(4,5,5); 
-
-   std:: cout <<  ("%d", pt->getters());
 */
+
+   std::cout << "Les coordonées du point p : (" 
+            << p.getX() << ", " 
+            << p.getY() << ", " 
+            << p.getZ() << ")" << std::endl;
+
 }
 
