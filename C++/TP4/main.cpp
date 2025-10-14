@@ -1,37 +1,25 @@
 #include <iostream>
+#include <string>
 #include "Date.h"
 #include "Heure.h"
 #include "Rdv.h"
-#include <string>
+
 
 int main (){
    date auj= date(14,10,2025);
-
-    auj.affiche();
-
-    std::cout << "J'arrive a print des trucs, genre l'annee: "
-    << auj.gety() << std::endl;
-
-   auj.sety(auj.gety()+1);
-   std::cout << "Un an passe donc l'annee est maintenant "
-    << auj.gety() << std::endl;
-
+   std::string plage= "la plage";
    heure instant= heure(10,46);
 
-    instant.affiche();
-
-    std::cout << "Je print l'heure: "
-    << instant.geth() << std::endl;
-
-   instant.seth(instant.geth()+1);
-   std::cout << "Dans une heure il sera "
-    << instant.geth() 
-    << " heure" << std::endl;
+   rdv coucou= rdv(auj,instant,plage);
 
 
+   std::string ami1 = "Amelie";
+   std::string ami2= "Paul";
+   coucou.ajouteparticipant(ami1);
+   coucou.ajouteparticipant(ami2);
+   coucou.affiche();
 
 
-    
    return 0;
 }
 

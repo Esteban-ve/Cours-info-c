@@ -23,8 +23,8 @@ public:
     ~rdv();
 
     //  Méthodes
-    void inicialise(); // met le nb de participants à 0 = tapbleau de str ...
     void affiche() const;
+    void ajouteparticipant(const std::string& participant);
 
 
     // getters

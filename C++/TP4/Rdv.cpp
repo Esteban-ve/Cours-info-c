@@ -10,7 +10,7 @@
 
 
 rdv::rdv(date dini, heure hini, std::string lini): d(dini),horaire(hini),lieu(lini),nb_participants(0) {
-    std::string* list_participants [10];
+    list_participants = new std::string[10];
 } // avec les paramètres iniciaux
 
 
@@ -22,7 +22,7 @@ rdv::~rdv() {}
 
 //  Méthodes
 void rdv::affiche() const {
-    std::cout << "La rdv est prévu pour le "
+    std::cout << "La rdv est prevu pour le "
     
         << d.getd() << " " 
         << d.getm() << " " 
@@ -35,16 +35,27 @@ void rdv::affiche() const {
         << " a cet endroit "
         << lieu
         
-        << " et il y aura"
-        << nb_participants<< "de participants"
+        << " et il y aura "
+        << nb_participants<< " de participants"
         
         <<std::endl;   
+        if (nb_participants>0){
+            std::cout<<": ";
+        }
+        for (int i = 0; i < nb_participants; i++) {
+            std::cout << "- " << list_participants[i] << std::endl;
+}
     }
 
-    void rdv::inicialise(){
-        nb_participants=0;
-        std::string* list_participants [10];
+void rdv::ajouteparticipant(const std::string& participant){
+    if (nb_participants<10){
+        list_participants[nb_participants] = participant;
+        nb_participants++;
     }
+    else{
+        std::cout<< "Il y a déjà 10 participants et c'est le max"<<std::endl;
+    }
+};
 
 
 
