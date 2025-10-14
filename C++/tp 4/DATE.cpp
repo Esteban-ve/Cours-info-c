@@ -1,13 +1,15 @@
+#include <iostream>
 #include "DATE.h"
 
+
 //  Verificateur de validité
-bool checkDate(int j, int m, int a){
+bool date::checkDate(int j, int m, int a){
     if (0<j && j<32 && 0<m && m<13 && 1999<a && a< 2051) {
         return true;
     }
     else {false;};
 }
-bool checkDate(const date){
+bool date::checkDate() const {
     if (0<d && d<32 && 0<m && m<13 && 1999<y && y< 2051) {
         return true;
     }
@@ -18,7 +20,7 @@ bool checkDate(const date){
 
 //  Constructeur avec paramètres
 date::date(int a, int b , int c) : d(a), m(b), y(c) {
-    if checkDate(a,b,c){}
+    if (checkDate(a,b,c)){}
     else{
         std::cout << "La date est invalide" << std::endl;
     }
@@ -34,7 +36,7 @@ void date::affiche() const {
     std::cout << "La date est le " 
         << d << ", " 
         << m << ", " 
-        << j << ")" << std::endl;   
+        << y << ")" << std::endl;   
     }
 
 // getters
@@ -44,28 +46,31 @@ int date::getd() const {
 int date::getm() const {
     return m;
 }
-int date::getj() const {
-    return j;
+int date::gety() const {
+    return y;
 }
 
 // setters
 
-int date::setd(int a) d(a){
-    if checkDate(){}
+int date::setd(int a) {
+    d=a;
+    if (checkDate()){}
     else{
         std::cout << "La date est invalide" << std::endl;
     };
 }
 
-int date::setm(int b) m(b){
-    if checkDate(){}
+int date::setm(int b) {
+    m=b;
+    if (checkDate()){}
     else{
         std::cout << "La date est invalide" << std::endl;
     };
 }
 
-int date::setj(int c) j(c){
-    if checkDate(){}
+int date::sety(int c) {
+    y=c;
+    if (checkDate()){}
     else{
         std::cout << "La date est invalide" << std::endl;
     };

@@ -7,7 +7,7 @@ private:
 
     // Verificateur de validité
     bool checkDate(int j, int m, int a);
-    bool checkDate();
+    bool checkDate() const;
 
 public:
     // Constructeurs
@@ -25,12 +25,12 @@ public:
     // getters
     int getd() const;
     int getm() const;
-    int getj() const;
+    int gety() const;
 
     // setters
     int setd(int a);
     int setm(int b);
-    int setj(int c);
+    int sety(int c);
 
 };
 
