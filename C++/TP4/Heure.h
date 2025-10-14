@@ -3,7 +3,7 @@
 
 class heure {
 private:
-    int d=1,m=1,y=2000;
+    int h=0,min=0;
 
     // Verificateur de validité
     bool checkHeure(int h, int m);
@@ -23,12 +23,12 @@ public:
 
     // getters
     int geth() const;
-    int getm() const;
+    int getmin() const;
 
 
     // setters
     void seth(int a);
-    void setm(int b);
+    void setmin(int b);
 
 
 };
