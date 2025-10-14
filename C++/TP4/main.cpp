@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Date.h"
 #include "Heure.h"
+#include "Rdv.h"
+#include <string>
 
 int main (){
    date auj= date(14,10,2025);
@@ -26,6 +28,10 @@ int main (){
     << instant.geth() 
     << " heure" << std::endl;
 
+
+
+
+    
    return 0;
 }
 
