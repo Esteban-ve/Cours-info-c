@@ -33,10 +33,10 @@ date::~date() {}
 
 //  Méthodes
 void date::affiche() const {
-    std::cout << "La date est le " 
-        << d << ", " 
-        << m << ", " 
-        << y << ")" << std::endl;   
+    std::cout << "La date est jour: " 
+        << d << " ,mois: " 
+        << m << " ,annee: " 
+        << y << " " << std::endl;   
     }
 
 // getters
