@@ -3,24 +3,36 @@
 
 class point {
 private:
-    int x, y, z;
+    double x, y, z;
+
+    // compteur d’instances
+    static int compteur;
 
 public:
-    // Constructeur
-    point(int a = 0, int b = 0, int c = 0);
+    // Constructeurs
+    point();                     // par défaut
+    point(double a,double b,double c); // avec les paramètres
+    point(const point& autre);   // recopie
 
-    // Méthodes
-    void initialize(int a, int b, int c);
-    void setters(int a, int b, int c);
-    void translate(int a, int b, int c);
-    double milieuX(int x) const;
-    double milieuY(int y) const;
-    double milieuZ(int z) const;
+    // Destructeur
+    ~point();
+
+    // Méthodes utilitaires
+    void initialize(double a, double b, double c);
+    void setters(double a, double b, double c);
 
     // Getters
-    int getX() const;
-    int getY() const;
-    int getZ() const;
+    double getX() const;
+    double getY() const;
+    double getZ() const;
+
+    // Fonctions de calcul
+    double milieuX(double x2) const;
+    double milieuY(double y2) const;
+    double milieuZ(double z2) const;
+
+    // Méthode statique pour récupérer le compteur
+    static int getCompteur();
 };
 
-#endif // POINT_H
+#endif

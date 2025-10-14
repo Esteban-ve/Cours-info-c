@@ -1,6 +1,5 @@
 #include <iostream>
-#include "Point.h"
-#include "Point.cpp"
+#include "point.h"
 
 int main ()
 {
@@ -16,12 +15,13 @@ int main ()
             << p.getY() << ", " 
             << p.getZ() << ")" << std::endl;
 
-   point p2 = point(0,0,0) ; // creation d’un point
+   point p2 = point(0,0,0) ; // creation d’un autre point
 
    std::cout << "milieu entre les deux points:("
    << p.milieuX(p2.getX()) << ", "
    << p.milieuY(p2.getY()) << ", "
    << p.milieuZ(p2.getZ()) << ", il est probablement tronqué )" << std::endl;
 
+   return 1;
 }
 
