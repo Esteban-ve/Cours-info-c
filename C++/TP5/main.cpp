@@ -5,15 +5,16 @@
 
 
 int main (){
-   std::string pn= "Paul";
-   std::string n= "Dupont";
-   
-
-   personne paul= personne(n,pn);
+    std::string pn= "Paul";
+    std::string n= "Dupont";
+    std::string tel= "07453955830";
 
 
-   paul.affiche();
+    personne paul= personne(n,pn);
+    paul.settelephone(tel);
 
-   return 0;
-}
+    paul.affiche();
+
+    return 0;
+    }
 

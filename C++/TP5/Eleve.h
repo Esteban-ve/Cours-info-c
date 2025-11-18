@@ -12,11 +12,20 @@ private:
 
 public:
 
-    eleve(); //par défault
+    eleve(std::string nom, std::string prenom); //par défault
 
 
+    // getters
+    std::string getpromotion() const;
+    std::string getgroupe_td() const;
+    float getgpa() const;
+
+    // setters
+  
+    void setpromotion(std::string promotion);
+    void setgroupe_tp(std::string groupe_tp);
+    void setgpa(float gpa);
     
-
 };
 
 #endif

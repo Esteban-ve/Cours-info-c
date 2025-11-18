@@ -20,7 +20,7 @@ void eleve::affiche() const {
     std::cout<<" l'eleve est dans la promotion:"
     << getpromotion()<< ", pour GPD:"
     << getgpa()<< " et iel est dans le groupe de tp:"
-    << getgroupe_tp()<< std::endl;
+    << getgroupe_td()<< std::endl;
 }
 
 
@@ -32,7 +32,21 @@ std::string eleve::getpromotion() const{
 float eleve::getgpa() const{
     return gpa;
 }
-std::string eleve::getgroupe_tp() const{
-    return groupe_tp;
+std::string eleve::getgroupe_td() const{
+    return groupe_td;
 }
+
+
+void eleve::setpromotion(std::string promo){
+    this -> promo;
+}
+
+void eleve::setgroupe_td(std::string groupe_td){
+    this -> groupe_td;
+}
+
+void eleve::setgpa(float gpa){
+    this -> gpa;
+}
+
 
