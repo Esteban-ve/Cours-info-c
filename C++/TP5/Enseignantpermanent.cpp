@@ -1,6 +1,6 @@
 #include "Personne.h"
 #include "Personnel.h"
-#include "enseignantpermanent.h"
+#include "Enseignantpermanent.h"
 #include <iostream>
 #include <string>
 
@@ -22,7 +22,8 @@ float enseignantpermanent::calculsalaire() const{
 
 void enseignantpermanent::affiche() const {
     personnel::affiche();
-    std::cout<<" grace aux heuressup iel gagne maintenant :"
+    std::cout<< "son bureau est a"
+    << getbureau() <<" grace aux heuressup iel gagne maintenant :"
     << calculsalaire()<< std::endl;
 }
 

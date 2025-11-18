@@ -2,6 +2,7 @@
 #include "Eleve.h"
 #include "Personnel.h"
 #include "Personneladmin.h"
+#include "Enseignantpermanent.h"
 #include <iostream>
 #include <string>
 
@@ -26,7 +27,14 @@ int main (){
     Luc.setsalaire(1000);
     Luc.settaux(0.1);
     Luc.setheuressup(50);
-    Luc.affiche();
+    //Luc.affiche();
+
+    enseignantpermanent Math = enseignantpermanent(std::string("NC.Kintosh"), std::string("Math"));
+    Math.setprime(300);
+    Math.setgrade(50);
+    Math.setbureau("La jetee");
+    Math.setsalaire(1500);
+    Math.affiche();
 
     return 0;
     }
