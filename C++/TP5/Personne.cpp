@@ -17,8 +17,8 @@ void personne::affiche() const {
     std::cout << "La personne decrit.e est "
     
         << getnom() << " " 
-        << getprenom() << " habitant au" 
-        << getadresse() << " et ayant pour telephone"
+        << getprenom() << " habitant au:" 
+        << getadresse() << " et ayant pour telephone le "
         << gettelephone() << std::endl;
     }
 
