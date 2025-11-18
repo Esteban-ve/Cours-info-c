@@ -10,7 +10,7 @@
 
 
 rdv::rdv(date dini, heure hini, std::string lini): d(dini),horaire(hini),lieu(lini),nb_participants(0) {
-    list_participants = new std::string[10];
+    list_participants = new std::string[10];m           
 } // avec les paramètres iniciaux
 
 

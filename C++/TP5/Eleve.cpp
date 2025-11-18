@@ -7,7 +7,7 @@
 
 //  Constructeurs
 
-eleve::eleve(std::string nom, std::string prenom): personne(std::string nom, std::string prenom) {
+eleve::eleve(std::string nom, std::string prenom):personne( nom, prenom) {
     promotion = std::string("");
     gpa = -1;
     groupe_td = std::string("");
@@ -37,16 +37,16 @@ std::string eleve::getgroupe_td() const{
 }
 
 
-void eleve::setpromotion(std::string promo){
-    this -> promo;
+void eleve::setpromotion(std::string promotion){
+    this -> promotion = promotion;
 }
 
 void eleve::setgroupe_td(std::string groupe_td){
-    this -> groupe_td;
+    this -> groupe_td = groupe_td; 
 }
 
 void eleve::setgpa(float gpa){
-    this -> gpa;
+    this -> gpa = gpa;
 }
 
 

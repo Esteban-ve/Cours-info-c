@@ -16,8 +16,8 @@ personne::personne(std::string nom_p, std::string prenom_p):nom(nom_p), prenom(p
 void personne::affiche() const {
     std::cout << "La personne decrit.e est "
     
-        << getnom() << " " 
-        << getprenom() << " habitant au:" 
+        << getprenom() << " " 
+        << getnom() << " habitant au:" 
         << getadresse() << " et ayant pour telephone le "
         << gettelephone() << std::endl;
     }
@@ -40,14 +40,14 @@ std::string personne::gettelephone() const{
 // setters
 
 void personne::setnom(std::string nom){
-    this -> nom;
+    this -> nom = nom;
 }
 void personne::setprenom(std::string prenom){
-    this -> prenom;
+    this -> prenom = prenom;
 }
 void personne::setadresse(std::string adresse){
-    this -> adresse;
+    this -> adresse = adresse;
 }
 void personne::settelephone(std::string telephone){
-    this -> telephone;
+    this -> telephone = telephone;
 }

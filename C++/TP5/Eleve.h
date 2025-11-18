@@ -1,5 +1,5 @@
-#ifndef PERSONNE_H
-#define PERSONNE_H
+#ifndef ELEVE_H
+#define ELEVE_H
 #include "Personne.h"
 #include <iostream>
 #include <string>
@@ -14,6 +14,7 @@ public:
 
     eleve(std::string nom, std::string prenom); //par défault
 
+    void affiche() const;
 
     // getters
     std::string getpromotion() const;
@@ -23,9 +24,9 @@ public:
     // setters
   
     void setpromotion(std::string promotion);
-    void setgroupe_tp(std::string groupe_tp);
+    void setgroupe_td(std::string groupe_td);
     void setgpa(float gpa);
     
 };
 
-#endif
+#endif 
