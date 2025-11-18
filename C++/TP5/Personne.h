@@ -21,10 +21,10 @@ public:
 
 
     // getters
-    int getnom() const;
-    int getprenom() const;
-    int getadresse() const;
-    int gettelephone() const;
+    std::string getnom() const;
+    std::string getprenom() const;
+    std::string getadresse() const;
+    std::string gettelephone() const;
 
     // setters
   
