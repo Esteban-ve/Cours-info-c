@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-class Personne {
+class personne {
 private:
     std::string nom;
     std::string prenom;
