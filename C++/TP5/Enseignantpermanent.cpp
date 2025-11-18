@@ -20,7 +20,7 @@ float enseignantpermanent::calculsalaire() const{
     return getsalaire() + prime * grade / 100;
 }
 
-void personneladmin::affiche() const {
+void enseignantpermanent::affiche() const {
     personnel::affiche();
     std::cout<<" grace aux heuressup iel gagne maintenant :"
     << calculsalaire()<< std::endl;
@@ -29,27 +29,27 @@ void personneladmin::affiche() const {
 
 // getters et setters
 
-std::string getbureau() const {
+std::string enseignantpermanent::getbureau() const{
     return bureau;
 }
 
-float getprime() const {
+float enseignantpermanent::getprime() const{
     return prime;
 }
 
-int getgrade() const {
+int enseignantpermanent::getgrade() const {
     return grade;
 }
 
-void setbureau(std::string bureau) {
+void enseignantpermanent::setbureau(std::string bureau) {
     this -> bureau = bureau;
 }
 
-void setprime(float prime) {
+void enseignantpermanent::setprime(float prime) {
     this -> prime = prime;
 }
 
-void setgrade(int grade) {
+void enseignantpermanent::setgrade(int grade) {
     this -> grade = grade;
 }
 
