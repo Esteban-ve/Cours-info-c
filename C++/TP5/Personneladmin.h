@@ -1,28 +1,32 @@
-#ifndef PERSONNEL_H
-#define PERSONNEL_H
+#ifndef PERSONNELADMIN_H
+#define PERSONNELADMIN_H
 #include "Personne.h"
+#include "Personnel.h"
 #include <iostream>
 #include <string>
 
-class personnel: public personne {
+class personneladmin: public personnel {
 private:
 
-    float salaire;
+    float taux;
+    int heuressup;
 
 public:
 
-    personnel(std::string nom, std::string prenom); //par défault
+    personneladmin(std::string nom, std::string prenom); //par défault
 
     float calculsalaire() const;
     void affiche() const;
 
     // getters
 
-    float getsalaire() const;
+    float gettaux() const;
+    int getheuressup() const;
 
     // setters
   
-    void setsalaire(float salaire);
+    void setsalaire(float taux);
+    void setheuressup(int heuressup);
     
 };
 
