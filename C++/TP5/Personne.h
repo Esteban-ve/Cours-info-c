@@ -13,7 +13,7 @@ private:
 public:
     // Constructeurs
     personne(std::string nom, std::string prenom, std::string adresse, std::string telephone); // avec les tous les paramètres
-    personne(std::string nom, std::string prenom) // avec 2 paramètres par défaults
+    personne(std::string nom, std::string prenom); // avec 2 paramètres par défaults
     
 
     //  Méthodes

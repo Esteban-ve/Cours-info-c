@@ -5,16 +5,16 @@
 
 //  Constructeurs
 
-personne::personne(std::string nom_p, std::string prenom_p, std::string adresse_p, std::string telephone_p): nom(nom_p), prenom(prenom_p),adresse(adresse_p), telephone(telephone_p) {;}
+personne::personne(std::string nom_p, std::string prenom_p, std::string adresse_p, std::string telephone_p): nom(nom_p), prenom(prenom_p),adresse(adresse_p), telephone(telephone_p) {}
 personne::personne(std::string nom_p, std::string prenom_p):nom(nom_p), prenom(prenom_p){
-    adresse = std::string "";
-    telephone = std::string "";
+    adresse = std::string("");
+    telephone = std::string("");
 }
 
 // Méthodes
 
 void personne::affiche() const {
-    std::cout << "La personne décrit.e est "
+    std::cout << "La personne decrit.e est "
     
         << getnom() << " " 
         << getprenom() << " habitant au" 
@@ -24,30 +24,30 @@ void personne::affiche() const {
 
 
 // getters
-std::string getnom() const{
+std::string personne::getnom() const{
     return nom;
 }
-std::string getprenom() const{
+std::string personne::getprenom() const{
     return prenom;
 }
-std::string getadresse() const{
+std::string personne::getadresse() const{
     return adresse;
 }
-std::string gettelephone() const{
+std::string personne::gettelephone() const{
     return telephone;
 }
 
 // setters
 
-void setnom(std::string nom){
-    this.nom=nom;
+void personne::setnom(std::string nom){
+    this -> nom;
 }
-void setprenom(std::string prenom){
-    this.prenom=prenom;
+void personne::setprenom(std::string prenom){
+    this -> prenom;
 }
-void setadresse(std::string adresse){
-    this.adresse=adresse;
+void personne::setadresse(std::string adresse){
+    this -> adresse;
 }
-void settelephone(std::string telephone){
-    this.telephone=telephone;
+void personne::settelephone(std::string telephone){
+    this -> telephone;
 }
