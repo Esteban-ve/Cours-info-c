@@ -25,7 +25,7 @@ public:
 
     // setters
   
-    void setsalaire(float taux);
+    void settaux(float taux);
     void setheuressup(int heuressup);
     
 };

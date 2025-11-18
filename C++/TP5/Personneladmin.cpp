@@ -6,8 +6,6 @@
 
 
 
-
-
 //  Constructeurs
 
 personneladmin::personneladmin(std::string nom, std::string prenom):personnel( nom, prenom) {
@@ -16,13 +14,13 @@ personneladmin::personneladmin(std::string nom, std::string prenom):personnel( n
 
 // Methodes
 
-float personnel::calculsalaire() const{
-    return salaire + heuressup * taux;
+float personneladmin::calculsalaire() const{
+    return getsalaire() + heuressup * taux;
 }
 
-void personnelamdin::affiche() const {
+void personneladmin::affiche() const {
     personnel::affiche();
-    std::cout<<" le membre du personnel gagne ce salaire :"
+    std::cout<<" grace aux heuressup iel gagne maintenant :"
     << calculsalaire()<< std::endl;
 }
 
@@ -30,10 +28,10 @@ void personnelamdin::affiche() const {
 // getters et setters
 
 
-float personnelamdin::gettaux() const{
+float personneladmin::gettaux() const{
     return taux;
 }
-int personnelamdin::getheuressup() const{
+int personneladmin::getheuressup() const{
     return heuressup;
 }
 
@@ -41,13 +39,9 @@ void personneladmin::settaux(float taux){
     this -> taux = taux;
 }
 
-void personneladmin::setheuressup(float heuressup){
+void personneladmin::setheuressup(int heuressup){
     this -> heuressup = heuressup;
 }
-
-
-
-
 
 
 
