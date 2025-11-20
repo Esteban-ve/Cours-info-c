@@ -24,6 +24,7 @@ int main (){
     luna.setsalaire(1750);
     //luna.affiche();
 
+
     personneladmin Luc = personneladmin(std::string("Moron"), std::string("Luc"));
     Luc.setsalaire(1000);
     Luc.settaux(0.1);
@@ -35,12 +36,12 @@ int main (){
     Math.setgrade(50);
     Math.setbureau("La jetee");
     Math.setsalaire(1500);
-    Math.affiche();
+    //Math.affiche();
 
     enseignantvacataire Anne = enseignantvacataire(std::string("Joe"), std::string("Anne"));
     Anne.settaux(0.6);
     Anne.setnbreheures(35*4);
-    Anne.setcasier("La maille 2");
+    Anne.setcasier(" maille 2");
     Anne.affiche();
 
 

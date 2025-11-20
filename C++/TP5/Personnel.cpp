@@ -28,7 +28,7 @@ void personnel::affiche() const {
 
 
 float personnel::getsalaire() const{
-    return salaire;
+    return calculsalaire();
 }
 
 void personnel::setsalaire(float salaire){
