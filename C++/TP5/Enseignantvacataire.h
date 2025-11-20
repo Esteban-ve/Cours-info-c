@@ -1,20 +1,20 @@
-#ifndef ENSEIGNANTPERMANENT_H
-#define ENSEIGNANTPERMANENT_H
+#ifndef ENSEIGNANTVACATAIRE_H
+#define ENSEIGNANTVACATAIRE_H
 #include "Personne.h"
 #include "Personnel.h"
 #include <iostream>
 #include <string>
 
-class enseignantpermanent: public personnel {
+class enseignantvacataire: public personnel {
 private:
 
-    std::string bureau;
-    float prime;
-    int grade;
+    std::string casier;
+    float taux;
+    int nbreheures;
 
 public:
 
-    enseignantpermanent(std::string nom, std::string prenom); //par défault
+    enseignantvacataire(std::string nom, std::string prenom); //par défault
 
     float calculsalaire() const;
     void affiche() const;
@@ -22,16 +22,16 @@ public:
     // getters
 
 
-    std::string getbureau() const;
-    float getprime() const;
-    int getgrade() const;
+    std::string getcasier() const;
+    float gettaux() const;
+    int getnbreheures() const;
 
 
     // setters
 
-    void setbureau(const std::string bureau);
-    void setprime(float prime);
-    void setgrade(int grade);
+    void setcasier(const std::string casier);
+    void settaux(float taux);
+    void setnbreheures(int nbreheures);
 
     
 };

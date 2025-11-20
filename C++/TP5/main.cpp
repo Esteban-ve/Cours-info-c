@@ -3,6 +3,7 @@
 #include "Personnel.h"
 #include "Personneladmin.h"
 #include "Enseignantpermanent.h"
+#include "Enseignantvacataire.h"
 #include <iostream>
 #include <string>
 
@@ -35,6 +36,14 @@ int main (){
     Math.setbureau("La jetee");
     Math.setsalaire(1500);
     Math.affiche();
+
+    enseignantvacataire Anne = enseignantvacataire(std::string("Joe"), std::string("Anne"));
+    Anne.settaux(0.6);
+    Anne.setnbreheures(35*4);
+    Anne.setcasier("La maille 2");
+    Anne.affiche();
+
+
 
     return 0;
     }
