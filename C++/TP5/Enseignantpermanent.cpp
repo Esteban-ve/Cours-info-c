@@ -23,8 +23,7 @@ float enseignantpermanent::calculsalaire() const{
 void enseignantpermanent::affiche() const {
     personnel::affiche();
     std::cout<< "son bureau est a"
-    << getbureau() <<" grace aux heuressup iel gagne maintenant :"
-    << calculsalaire()<< std::endl;
+    << getbureau()<< std::endl;
 }
 
 

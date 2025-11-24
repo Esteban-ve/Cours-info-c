@@ -15,8 +15,8 @@ public:
 
     personneladmin(std::string nom, std::string prenom); //par défault
 
-    float calculsalaire() const;
-    void affiche() const;
+    float calculsalaire() const override;
+    void affiche() const override;
 
     // getters
 

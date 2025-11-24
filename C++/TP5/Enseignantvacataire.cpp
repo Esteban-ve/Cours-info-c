@@ -23,8 +23,7 @@ float enseignantvacataire::calculsalaire() const{
 void enseignantvacataire::affiche() const {
     personnel::affiche();
     std::cout<< "son casier est le"
-    << getcasier() <<" grace aux heures travailler iel gagne maintenant :"
-    << calculsalaire()<< std::endl;
+    << getcasier() << std::endl;
 }
 
 

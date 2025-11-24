@@ -13,8 +13,9 @@ public:
 
     personnel(std::string nom, std::string prenom); //par défault
 
-    float calculsalaire() const;
-    void affiche() const;
+    virtual float calculsalaire() const = 0; // virtuelle pure
+    virtual void affiche() const;
+    virtual ~personnel() {};
 
     // getters
 

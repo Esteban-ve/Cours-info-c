@@ -20,9 +20,7 @@ float personneladmin::calculsalaire() const{
 
 void personneladmin::affiche() const {
     personnel::affiche();
-    std::cout<<" grace aux heuressup iel gagne maintenant :"
-    << calculsalaire()<< std::endl;
-}
+    }
 
 
 // getters et setters

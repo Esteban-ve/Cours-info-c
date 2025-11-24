@@ -13,13 +13,9 @@ personnel::personnel(std::string nom, std::string prenom):personne( nom, prenom)
 
 // Methodes
 
-float personnel::calculsalaire() const{
-    return salaire;
-}
-
 void personnel::affiche() const {
     personne::affiche();
-    std::cout<<" le membre du personnel gagne ce salaire :"
+    std::cout<<" iel gagne :"
     << calculsalaire()<< std::endl;
 }
 
@@ -28,7 +24,7 @@ void personnel::affiche() const {
 
 
 float personnel::getsalaire() const{
-    return calculsalaire();
+    return salaire;
 }
 
 void personnel::setsalaire(float salaire){
