@@ -30,6 +30,17 @@ void listepersonnel::affichersalaire() const{
         <<tab[i]->calculsalaire()
         <<std::endl;
     }
+
+    void listepersonnel::doubletableau() {
+    taille *= 2;
+    personnel** nouveau = new personnel*[taille];
+
+    for (int i = 0; i < nb; i++) {
+        nouveau[i] = tab[i];
+    }
+    delete[] tab;
+    tab = nouveau;
+}
 }
     
 

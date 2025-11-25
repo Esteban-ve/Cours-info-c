@@ -19,6 +19,7 @@ public:
   
 
     //  Méthodes
+    void doubletableau();
     void ajout(personnel* ptpersonnel);
     void affichersalaire() const;
 
