@@ -1,13 +1,11 @@
 #include "Vector.h"
 #include <iostream>
+#include <string>
 
+int main(){
+    vector v = vector(2.3);
 
-int main{
-
-
-
-
-
+    v.affiche();
 
     return 0;
 }
