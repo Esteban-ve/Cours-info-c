@@ -5,6 +5,8 @@
 // Initialisation du compteur
 int vector::nb_instance = 0;
 
+// les constructeurs
+
 vector::vector(){
     taille=0;
     tab=new double[taille];
@@ -48,38 +50,20 @@ vector::vector(double a, double b, double c, double d){
     taille=4;
     nb_instance++;
 }
+
+// le destructeur
+vector::~vector() {
+    delete[] tab;
+    nb_instance--;
+}
+
+// les méthodes
+
 void vector::affiche() const{
     for (int i=0; i<taille; i++){
         std::cout<<tab[i]<<std::endl;
     }
 }
-
-void vector::rempli(int emplacement,double a){
-    if (emplacement<taille){
-        tab[emplacement]=a;
-    }
-    else{
-        std::cout<<"l'emplacement depasse la taille du vecteur"<<std::endl;
-    }
-}
-
-vector vector::addition(vector a,vector b){
-    if (a.taille=b.taille){
-        vector res= vector(taille);
-        for (int i; i<taille;i++){
-            res.tab[i]=a.tab[i] + b.tab[i]
-        }
-    }
-    else{
-        std::cout<<"les vecteurs ont des tailles differentes"<<std::endl;
-    }
-}
-
-
-
-
-
-
 
 
 void vector::printnb_instance() const{
@@ -88,3 +72,16 @@ void vector::printnb_instance() const{
 int vector::getnb_instance() const{
     return nb_instance;
 }
+
+
+// les opérateurs
+
+vector operator+(const vector& a, const vector& b)
+{
+    vector v= vector(int a*.taille);
+    for (int i, i<taille, i++){
+        v.[i]= a*.tab
+    }
+return vector();
+}
+

@@ -19,8 +19,13 @@ public:
     vector(double a, double b, double c, double d);
     void affiche() const;
 
-    void rempli(int emplacement, double a);
-    vector addition(vector a,vector b);
+
+
+    int getnb_instance() const;
+    void printnb_instance() const;
+
+    friend vector operator+( const vector& a,const vector& b);
+
 
 };
 #endif
