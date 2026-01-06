@@ -16,7 +16,6 @@ cout << "je suis la fonction 3" << endl;
 void fct(int a, float b) {
 cout << "Je suis la fonction 4" << endl;
 }
-
 template <class T> T somme ( int taille, const T* tab){
     if (taille == 0) {return T();}
     T res = tab[0];
@@ -25,9 +24,6 @@ template <class T> T somme ( int taille, const T* tab){
     }
     return res;
 }
-
-
-
 template <class T> int minimum ( int taille, const T* tab){
     int mini = 0;
     for (int i = 0; i < taille; i++) {
@@ -35,7 +31,6 @@ template <class T> int minimum ( int taille, const T* tab){
     }
     return mini;
 }
-
 template <class T, class U> int minimum ( int taille, const T* tab, const U* tab2){
     int mini = 0;
     for (int i = 0; i < taille; i++) {
@@ -43,8 +38,6 @@ template <class T, class U> int minimum ( int taille, const T* tab, const U* tab
     }
     return mini;
 }
-
-
 
 int main(){
 
